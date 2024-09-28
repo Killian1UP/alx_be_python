@@ -9,11 +9,11 @@ def perform_operation(num1, num2, operation):
         sum = num1 * num2
         return sum
     elif operation == '/':
-        if num2 != 0:
+        if num2 == 0:
+            print("Error! You divided with zero.")
+        else:
             sum = num1 / num2
             return sum
-        else:
-            print("Error! You divided with zero.")
     else:
         print("You did not use the correct operation sign.")
 
